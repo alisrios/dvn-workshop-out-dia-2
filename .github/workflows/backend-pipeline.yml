@@ -10,6 +10,10 @@ env:
     REPOSITORY: dvn-workshop/production/backend
     IMAGE_TAG: ${{ github.sha }}
 
+permissions:
+  contents: read
+  id-token: write
+  
 jobs:
   backend:
     name: Backend Job
