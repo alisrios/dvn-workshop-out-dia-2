@@ -37,7 +37,7 @@ jobs:
       env:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
       run: |
-          docker build -f ./dvn-workshop-apps/backend/Dockerfile -t $REGISTRY/$REPOSITORY:$IMAGE_TAG ./dvn-workshop-apps/backend/
+          docker build -f ./dvn-workshop-apps/backend/YoutubeLiveApp/Dockerfile -t $REGISTRY/$REPOSITORY:$IMAGE_TAG ./dvn-workshop-apps/backend/YoutubeLiveApp/
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
 
     - name: Checkout code
