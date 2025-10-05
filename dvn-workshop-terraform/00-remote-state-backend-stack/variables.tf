@@ -5,7 +5,7 @@ variable "auth" {
   })
 
   default = {
-    assume_role_arn = "arn:aws:iam::<YOUR_ACCOUNT>:role/WorkshopDevOpsNaNuvemRole"
+    assume_role_arn = "arn:aws:iam::654654554686:role/WorkshopDevOpsNaNuvemRole"
     region          = "us-east-1"
   }
 }
@@ -28,7 +28,7 @@ variable "remote_backend" {
   })
 
   default = {
-    bucket_name                = "workshop-remote-backend-bucket-<YOUR_ACCOUNT>"
+    bucket_name                = "workshop-remote-backend-bucket-654654554686"
     dynamo_table_name          = "workshop-state-locking-table"
     dynamo_table_hash_key      = "LockID"
     dynamo_table_billing_mode  = "PAY_PER_REQUEST"

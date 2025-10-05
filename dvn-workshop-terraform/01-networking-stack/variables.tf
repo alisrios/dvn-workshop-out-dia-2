@@ -5,7 +5,7 @@ variable "auth" {
   })
 
   default = {
-    assume_role_arn = "arn:aws:iam::<YOUR_ACCOUNT>:role/WorkshopDevOpsNaNuvemRole"
+    assume_role_arn = "arn:aws:iam::654654554686:role/WorkshopDevOpsNaNuvemRole"
     region          = "us-east-1"
   }
 }
